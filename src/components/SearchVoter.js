@@ -8,7 +8,7 @@ const SearchVoter = () => {
 
     const handleSearch = async () => {
         try {
-            const response = await axios.get(`http://localhost:8000/api/voters/${searchId}/`, {
+            const response = await axios.get(`https://voting-jet.vercel.app//api/voters/${searchId}/`, {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem('access')}`,
                 },

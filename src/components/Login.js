@@ -10,7 +10,7 @@ const Login = () => {
 
     const handleLogin = async () => {
         try {
-            const response = await axios.post('http://localhost:8000/auth/jwt/create/', {
+            const response = await axios.post('https://voting-jet.vercel.app//auth/jwt/create/', {
                 username,
                 password,
             });

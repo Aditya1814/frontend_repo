@@ -10,7 +10,7 @@ const Signup = () => {
 
     const handleSignup = async () => {
         try {
-            await axios.post('http://localhost:8000/auth/users/', {
+            await axios.post('https://voting-jet.vercel.app//auth/users/', {
                 username,
                 password,
             });
